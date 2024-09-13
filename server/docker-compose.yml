@@ -1,0 +1,11 @@
+name: pocket-js-server
+
+services:
+  pg:
+    image: bitnami/postgresql:13.16.0-debian-12-r9
+    ports:
+      - '5433:5433'
+    environment:
+      - POSTGRES_USER=moacir
+      - POSTGRES_PASSWORD=moacir
+      - POSTGRES_DB=inorbit
